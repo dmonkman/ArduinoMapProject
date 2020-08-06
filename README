@@ -1,0 +1,54 @@
+Paul LeClair, 1451166
+Drayton Monkman, 1553293
+November 24, 2017
+
+ASSIGNMENT 2 PART 2 README
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accessories:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adafruit ILI9341 screen
+Joystick
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Screen Wiring:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Connect the following pins (as per the wiring instructions on eClass):
+Board Pin <---> Arduino Pin
+===========================
+GND             GND
+Vin             5V
+3Vo             NOT CONNECTED
+CLK             52
+MISO            50
+MOSI            51
+CS              10
+D/C             9
+RST             NOT CONNECTED
+Lite            NOT CONNECTED
+Y+              A2 (analog pin)
+X+              4  (digital pin)
+Y-              5  (digital pin)
+X-              A3 (analog pin)
+IM0 - IM3       NOT CONNECTED (they expect a 3.3v signal, DON'T CONNECT!)
+CCS             6
+CD              NOT CONNECTED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Joystick wiring:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Joystick GND -> Arduino GND
+Joystick +5V -> Arduino +5V
+Joystick VRx -> Arduino A1 (analog)
+Joystick VRy -> Arduino A0 (analog)
+Joystick SW -> Arduino 2 (digital)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How to Use:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Plug in the Arduino through the USB port, navigate to the project directory and use the "make upload" command in the
+terminal. Use the joystick to move the cursor around the screen. Moving the cursor to one of the edges of the screen shifts the
+image in that direction, provided there is enough space. The rating selector shows the minimum number of stars that you want your restaurants to be.
+Stars are listed from bottom to top, so tap a higher location to select a higher rating. Tap a lower star to lower the rating.
+
+Pressing the joystick's digital button will create a list of the 30 closest restaurants. Scroll to the bottom of a page and press down to see another page.
+You can return to the previous page by pressing up at the top of the list. After using the joystick to highlight one of the options, pressing the joystick button will take you back
+to the map and the cursor will be positioned overtop of the selected restaurant on the map.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
