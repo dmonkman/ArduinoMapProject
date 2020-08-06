@@ -1,7 +1,7 @@
 #include "restaurant.h"
 
-// Paul LeClair, 1451166
-// Drayton Monkman, 1553293
+// Paul LeClair, 145----
+// Drayton Monkman, 155----
 // November 24, 2017
 
 /*
